@@ -148,7 +148,7 @@ myapp.config(function($stateProvider,$urlRouterProvider, $ionicConfigProvider){
     //------------------news----------------------
     $stateProvider.state("tabs.news",{
         url:"/news",
-        views:{"tab_news":{templateUrl:"views/news/news.html"}}
+        views:{"tab_news":{templateUrl:"docs/views/news/news.html"}}
     });
     $stateProvider.state("notice",{
         url:"/notice",

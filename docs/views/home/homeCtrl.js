@@ -3,14 +3,14 @@
  */
 angular.module("myapp").controller("homeCtrl",function($scope,$http){
     $scope.imgs = [
-        {image:"images/lunbo_01.jpg"},
-        {image:"images/lunbo_02.jpg"},
-        {image:"images/lunbo_03.jpg"},
-        {image:"images/lunbo_04.jpg"},
-        {image:"images/lunbo_05.jpg"}
+        {image:"docs/images/lunbo_01.jpg"},
+        {image:"docs/images/lunbo_02.jpg"},
+        {image:"docs/images/lunbo_03.jpg"},
+        {image:"docs/images/lunbo_04.jpg"},
+        {image:"docs/images/lunbo_05.jpg"}
     ];
     //ajax请求
-    var url = "json/home.json";
+    var url = "docs/json/home.json";
     $http.get(url).success(function (data) {
         $scope.datas = data;
 

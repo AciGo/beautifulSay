@@ -2,7 +2,7 @@
  * Created by Administrator on 2016/6/11 0011.
  */
 angular.module("myapp").controller("loveCtrl",function($scope,$http){
-    var url = "json/love.json";
+    var url = "docs/json/love.json";
     $http.get(url).success(function (data) {
         $scope.cats = data.cat;
         $scope.xias = data.xia;

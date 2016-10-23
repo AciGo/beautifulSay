@@ -2,7 +2,7 @@
  * Created by Administrator on 2016/6/11 0011.
  */
 angular.module("myapp").controller("classifyCtrl",function($scope,$http){
-    var url = "json/classify.json";
+    var url = "docs/json/classify.json";
     $http.get(url).success(function (data) {
         $scope.shangyis = data.shangyi;
         $scope.kuzis = data.kuzi;

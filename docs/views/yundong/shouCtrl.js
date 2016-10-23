@@ -4,7 +4,7 @@
 
 angular.module("myapp").controller("shouCtrl",function($scope,$http){
     //ajax请求
-    var url = "json/shoushen.json";
+    var url = "docs/json/shoushen.json";
     $http.get(url).success(function (data) {
         $scope.images = data;
     }).error(function (err) {

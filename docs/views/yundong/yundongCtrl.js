@@ -4,7 +4,7 @@
 
 angular.module("myapp").controller("yundongCtrl",function($scope,$http){
     //ajax请求
-    var url = "json/yundong.json";
+    var url = "docs/json/yundong.json";
     $http.get(url).success(function (data) {
         $scope.images = data;
     }).error(function (err) {
